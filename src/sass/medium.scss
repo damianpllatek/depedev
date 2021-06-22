@@ -1,0 +1,50 @@
+@import './src/sass/colors';
+
+// ----------- NAVIGATION ------------- //
+
+.navbar {
+    &__img {
+        padding: 1em;
+        width: 180px;
+    }
+
+    &__bars {
+        padding: .5em;
+        font-size: 3rem;
+        color: $light-green;
+    }
+}
+
+// ----------- HEADER ------------- //
+
+.header {
+    &__title {
+        margin-top: 0;
+        margin-bottom: .8em;
+        font-size: 3.4rem;
+    }
+
+    &__description {
+        margin-bottom: 2em;
+        font-size: 1.7rem;
+    }
+}
+
+// ----------- HEADER ------------- //
+
+.services-cards {
+    padding: 6em 0;
+}
+
+// ----------- HEADER ------------- //
+@media (min-width: 900px) {
+    .header {
+        &__title {
+            font-size: 3.6rem;
+        }
+
+        &__btn {
+            font-size: 1.7rem;
+        }
+    }
+}

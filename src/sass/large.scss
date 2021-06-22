@@ -1,0 +1,144 @@
+@import './src/sass/colors';
+
+// ----------- NAVIGATION ------------- //
+
+.navbar {
+    &__img {
+        width: 220px;
+    }
+
+    &__navbar-link {
+        margin-left: 2em;
+    }
+}
+
+// ----------- HEADER ------------- //
+
+.header {
+
+    &__slide-one,
+    &__slide-two,
+    &__slide-three {
+        &__text {
+            width: 60%;
+        }
+    }
+
+    &__slide-one {
+        background-image: url('/dist/img/growth-md.jpg');
+    }
+
+    &__slide-two {
+        background-image: url('/dist/img/office-md.jpg');
+    }
+
+    &__slide-three {
+        background-image: url('/dist/img/coder-md.jpg');
+    }
+
+    &__icon {
+        display: block;
+        font-size: 8rem;
+        color: rgba(255, 255, 255, .3);
+    }
+
+    &__title {
+        font-size: 4.6rem;
+    }
+
+    &__description {
+        margin-bottom: 4em;
+        font-size: 1.8rem;
+    }
+
+    &__btn {
+        padding: 0.8em 1.6em;
+        font-size: 1.8rem;
+    }
+
+}
+
+// ----------- SERVICES ------------- //
+
+.services {
+    &__container {
+        margin: 6em 0;
+    }
+
+    &__green-block {
+        padding-right: .8em;
+        height: 45px;
+    }
+
+    &__title {
+        margin-bottom: 2.8em;
+        font-size: 3.6rem;
+    }
+
+    &__img {
+        margin-bottom: 2em;
+    }
+
+    &__description {
+        font-size: 2.6rem;
+    }
+}
+
+// ----------- MEDIA ------------- //
+@media (min-width: 1150px) {
+    .header {
+        &__title {
+            font-size: 5rem;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .services {
+        &__container {
+            margin: 8em 0;
+        }
+
+        &__green-block {
+            height: 50px;
+        }
+
+        &__img {
+            margin-bottom: 2.4em;
+        }
+    }
+
+    .services-cards {
+        padding: 6em 0;
+        background-image: url('/dist/img/services-lg.jpg');
+    }
+}
+
+@media (min-width: 1350px) {
+    .header {
+
+        &__slide-one,
+        &__slide-two,
+        &__slide-three {
+            &__text {
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1900px) {
+    .header {
+        &__slide-one {
+            background-image: url('/dist/img/growth-lg.jpg');
+        }
+
+        &__slide-two {
+            background-image: url('/dist/img/office-lg.jpg');
+        }
+
+        &__slide-three {
+            background-image: url('/dist/img/coder-lg.jpg');
+        }
+    }
+}

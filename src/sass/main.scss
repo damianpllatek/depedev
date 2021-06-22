@@ -1,0 +1,479 @@
+@import './src/sass/colors';
+@import './src/sass/components';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+}
+
+
+
+// ----------- NAVIGATION ------------- //
+
+.navbar {
+    background-color: rgba(18, 27, 38, 0.73);
+    z-index: 200;
+
+    &__img {
+        padding: 1em;
+        width: 150px;
+        height: auto;
+    }
+
+    &__nav-link {
+        padding: 1.4em 0;
+        width: 100%;
+        color: $pure-white;
+        font-family: 'Poppins', sans-serif;
+
+        &:hover {
+            color: $light-green;
+        }
+    }
+
+    &__bars {
+        padding: .5em;
+        font-size: 2.4rem;
+        color: $light-green;
+    }
+
+    .active {
+        color: $light-green;
+    }
+}
+
+// ----------- HEADER ------------- //
+
+.header {
+
+    &__slide-one {
+        background-image: url('/dist/img/growth-sm.jpg');
+    }
+
+    &__slide-two {
+        background-image: url('/dist/img/office-sm.jpg');
+    }
+
+    &__slide-three {
+        background-image: url('/dist/img/coder-sm.jpg');
+    }
+
+    &__slide-one,
+    &__slide-two,
+    &__slide-three {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 10;
+
+        &__text {
+            width: 75%;
+            color: $pure-white;
+            text-align: center;
+            z-index: 100;
+        }
+    }
+
+    &__icon {
+        display: none;
+    }
+
+    &__green-span {
+        display: block;
+        font-weight: 700;
+        color: $light-green;
+    }
+
+    &__shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(18, 27, 38, 0.73);
+        z-index: 20;
+    }
+
+    &__carousel-control-prev {
+        z-index: 50;
+    }
+
+    &__title {
+        margin-top: 1.4em;
+        margin-bottom: .2em;
+        font-size: 1.8rem;
+    }
+
+    &__description {
+        margin-bottom: 1.5em;
+        font-size: 1.2rem;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.6em;
+    }
+
+    &__btn {
+        padding: 0.5em 1em;
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: $light-green;
+        border: 1px solid $dark-green;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color .3s, color .3s;
+
+
+        &:hover {
+            background-color: $dark-green;
+            color: $pure-white;
+        }
+    }
+}
+
+// ----------- SERVICES ------------- //
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        margin: 3.4em 0;
+    }
+
+    &__title {
+        margin-bottom: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.6rem;
+        font-weight: 600;
+    }
+
+    &__green-block {
+        padding-right: .6em;
+        width: 4px;
+        height: 30px;
+        border-left: 2px solid $dark-green;
+    }
+
+    &__green-span {
+        color: $dark-green;
+    }
+
+    &__img {
+        margin-bottom: .8em;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    &__description {
+        margin-bottom: 2.4em;
+        font-size: 2rem;
+    }
+
+
+    &__image-one {
+        background-image: url('/dist/img/planning.jpg');
+    }
+
+    &__image-two {
+        background-image: url('/dist/img/design.jpg');
+    }
+
+    &__image-three {
+        background-image: url('/dist/img/coding.jpg');
+    }
+}
+
+// ----------- SERVICES CARDS ------------- //
+
+.services-cards {
+    position: relative;
+    padding: 4em 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/dist/img/services-md.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $pure-white;
+
+    &__shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .6);
+        z-index: 1;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    &__column {
+        margin: 1em;
+        padding: 1em;
+        width: 240px;
+        height: 170px;
+        display: flex;
+        border-radius: 5px;
+        background-color: rgba(52, 206, 47, .46);
+        transition: transform .3s, color .3s;
+        z-index: 50;
+
+        &:hover {
+            background-color: rgba(75, 255, 69, .46);
+            transform: scale(1.05)
+        }
+
+        &::before {
+            background-color: rgba(250, 252, 249, 0.1);
+        }
+    }
+
+    &__icon {
+        padding-top: .2em;
+        display: flex;
+        justify-content: center;
+        width: 15%;
+        font-size: 3rem;
+    }
+
+    &__description {
+        margin-left: .5em;
+        width: 85%;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    &__text {
+        font-size: 1.2rem;
+    }
+}
+
+// ----------- STEPS ------------- //
+
+.steps {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/dist/img/steps.jpg');
+    background-position: left;
+    background-size: cover;
+    background-attachment: fixed;
+
+    &__container {
+        margin: 3.4em 0;
+    }
+
+    &__green-block {
+        padding-right: .6em;
+        width: 4px;
+        height: 30px;
+        border-left: 2px solid $dark-green;
+    }
+
+    &__green-span {
+        color: $dark-green;
+    }
+
+    &__title {
+        margin: 0 .5em 3em;
+    }
+
+    &__description {
+        margin: 1em;
+        width: 240px;
+        height: auto;
+        background-color: $light-green;
+    }
+}
+
+// ----------- MEDIA ------------- //
+
+@media (min-width: 300px) {
+    .services {
+        &__img {
+            margin-bottom: 1em;
+            width: 180px;
+            height: 180px;
+        }
+    }
+}
+
+@media (min-width: 320px) {
+    .header {
+        &__title {
+            font-size: 2rem;
+        }
+
+        &__description {
+            font-size: 1.3rem;
+            line-height: 1.7em;
+        }
+    }
+
+    .services-cards {
+        &__column {
+            width: 260px;
+            height: 180px;
+        }
+
+        &__description {
+            margin-left: .8em;
+        }
+    }
+}
+
+@media (min-width: 360px) {
+    .services-cards {
+        &__column {
+            width: 280px;
+        }
+
+        &__icon {
+            padding-top: .2em;
+            font-size: 3.4rem;
+        }
+
+        &__description {
+            margin-left: 1em;
+        }
+    }
+}
+
+@media (min-width: 411px) {
+    .header {
+        &__title {
+            font-size: 2.2rem;
+        }
+    }
+
+    .services {
+        &__container {
+            margin: 3.8em 0;
+        }
+
+        &__title {
+            margin-bottom: 2.2em;
+            font-size: 2.8rem;
+        }
+
+        &__img {
+            width: 200px;
+            height: 200px;
+        }
+
+        &__description {
+            margin-bottom: 2.6em;
+            font-size: 2.2rem;
+        }
+    }
+
+    .services-cards {
+        &__column {
+            padding: 1.4em;
+            width: 320px;
+        }
+
+        &__icon {
+            padding-top: .2em;
+            font-size: 4rem;
+        }
+
+        &__title {
+            font-size: 1.8rem;
+        }
+
+        &__description {
+            margin-left: 1em;
+        }
+    }
+}
+
+@media (min-width: 470px) {
+    .header {
+        &__title {
+            font-size: 2.4rem;
+            line-height: 1.2em;
+        }
+    }
+}
+
+@media (min-width: 540px) {
+    .header {
+        &__title {
+            font-size: 2.6rem;
+        }
+
+        &__description {
+            font-size: 1.4rem;
+        }
+
+        &__slide-one,
+        &__slide-two,
+        &__slide-three {
+            &__text {
+                width: 60%;
+            }
+        }
+    }
+
+    .services {
+        &__container {
+            margin: 4em 0;
+        }
+
+        &__green-block {
+            padding-right: .7em;
+            height: 40px;
+            border-left: 3px solid $dark-green;
+        }
+
+        &__title {
+            margin-bottom: 2.4em;
+            font-size: 3rem;
+        }
+
+        &__img {
+            width: 220px;
+            height: 220px;
+        }
+
+        &__description {
+            margin-bottom: 2.6em;
+            font-size: 2.4rem;
+        }
+    }
+}
