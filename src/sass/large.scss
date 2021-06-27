@@ -98,6 +98,23 @@
     }
 }
 
+// ---------- GALLERY ---------------//
+
+.gallery {
+
+    &__photo1,
+    &__photo2,
+    &__photo3 {
+        width: 34%;
+        height: 330px;
+    }
+
+    &__photo3 {
+        display: block;
+    }
+}
+
+
 // ----------- MEDIA ------------- //
 @media (min-width: 1150px) {
     .header {
@@ -126,6 +143,21 @@
         padding: 6em 0;
         background-image: url('/dist/img/services-lg.jpg');
     }
+
+    .gallery {
+
+        &__photo1,
+        &__photo2,
+        &__photo3,
+        &__photo4 {
+            width: 25%;
+            height: 300px;
+        }
+    
+        &__photo4 {
+            display: block;
+        }
+    }
 }
 
 @media (min-width: 1350px) {
@@ -141,6 +173,18 @@
     }
 }
 
+@media (min-width: 1500px) {
+    .gallery {
+
+        &__photo1,
+        &__photo2,
+        &__photo3,
+        &__photo4 {
+            height: 350px;
+        }
+    }
+}
+
 @media (min-width: 1600px) {
     .steps {
         &__title {
@@ -149,6 +193,16 @@
         &__row {
             margin-left: 6em;
             align-items: flex-start;
+        }
+    }
+
+    .gallery {
+
+        &__photo1,
+        &__photo2,
+        &__photo3,
+        &__photo4 {
+            height: 400px;
         }
     }
 }

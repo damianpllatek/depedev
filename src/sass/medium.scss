@@ -54,7 +54,20 @@
     }
 }
 
-// ----------- HEADER ------------- //
+.gallery {
+
+    &__photo1,
+    &__photo2 {
+        width: 50%;
+        height: 380px;
+    }
+
+    &__photo2 {
+        display: block;
+    }
+}
+
+// ----------- MEDIA ------------- //
 @media (min-width: 900px) {
     .header {
         &__title {
