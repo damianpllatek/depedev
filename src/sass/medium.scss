@@ -36,6 +36,24 @@
     padding: 6em 0;
 }
 
+// ----------STEPS --------------//
+.steps {
+
+    &__title {
+        margin-left: 1.5em;
+    }
+
+    &__container {
+        padding: 2em 0;
+        text-align: left;
+    }
+
+    &__description {
+        text-align: left;
+        max-width: 500px;
+    }
+}
+
 // ----------- HEADER ------------- //
 @media (min-width: 900px) {
     .header {
@@ -48,3 +66,4 @@
         }
     }
 }
+
