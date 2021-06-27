@@ -295,8 +295,15 @@ body {
 
     &__container {
         margin: 3.4em 0;
+        justify-content: center;
+        text-align: center;
     }
 
+    &__row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     &__green-block {
         padding-right: .6em;
         width: 4px;
@@ -310,14 +317,34 @@ body {
 
     &__title {
         margin: 0 .5em 3em;
+        font-size: 2.2rem;
+        font-weight: 600;
     }
 
     &__description {
         margin: 1em;
-        width: 240px;
+        width: 90%;
         height: auto;
-        background-color: $light-green;
+        text-align: center;
     }
+
+    &__number {
+        font-size: 5rem;
+        color: $medium-grey;
+    }
+
+    &__des-title {
+        margin-bottom: 1em;
+        font-size: 2rem;
+        color: $light-dark;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        font-family: 'Poppins', sans-serif;
+        color: $dark-grey;
+    }
+    
 }
 
 // ----------- MEDIA ------------- //
@@ -352,6 +379,12 @@ body {
 
         &__description {
             margin-left: .8em;
+        }
+    }
+
+    .steps {
+        &__title {
+            font-size: 2.6rem;
         }
     }
 }
@@ -420,6 +453,12 @@ body {
             margin-left: 1em;
         }
     }
+
+    .steps {
+        &__title {
+            font-size: 2.8rem;
+        }
+    }
 }
 
 @media (min-width: 470px) {
@@ -427,6 +466,14 @@ body {
         &__title {
             font-size: 2.4rem;
             line-height: 1.2em;
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    .steps {
+        &__description {
+            width: 80%;
         }
     }
 }
@@ -474,6 +521,13 @@ body {
         &__description {
             margin-bottom: 2.6em;
             font-size: 2.4rem;
+        }
+    }
+
+    .steps {
+        &__title {
+            margin-bottom: 2.4em;
+            font-size: 3rem;
         }
     }
 }

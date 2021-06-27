@@ -84,6 +84,20 @@
     }
 }
 
+// ---------- STEPS ---------------//
+.steps {
+
+    &__title {
+        margin-left: 3em;
+        font-size: 3.6rem;
+    }
+
+    &__row {
+        margin-left: 6em;
+        align-items: flex-start;
+    }
+}
+
 // ----------- MEDIA ------------- //
 @media (min-width: 1150px) {
     .header {
@@ -123,6 +137,18 @@
             &__text {
                 width: 45%;
             }
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .steps {
+        &__title {
+            margin-left: 3em;
+        }
+        &__row {
+            margin-left: 6em;
+            align-items: flex-start;
         }
     }
 }
